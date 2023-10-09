@@ -1,0 +1,71 @@
+{
+    "tables": {
+        "RefreshTokens": {
+            "tableName": "RefreshTokens",
+            "schema": {
+                "id": {
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "user_id": {
+                    "allowNull": false,
+                    "field": "user_id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "refresh_token": {
+                    "allowNull": false,
+                    "unique": false,
+                    "field": "refresh_token",
+                    "seqType": "Sequelize.STRING"
+                },
+                "expiresAt": {
+                    "allowNull": false,
+                    "field": "expiresAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "Users": {
+            "tableName": "Users",
+            "schema": {
+                "id": {
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "username": {
+                    "allowNull": false,
+                    "unique": true,
+                    "field": "username",
+                    "seqType": "Sequelize.STRING"
+                },
+                "password": {
+                    "allowNull": false,
+                    "field": "password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "email": {
+                    "allowNull": false,
+                    "unique": true,
+                    "field": "email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "phone_number": {
+                    "allowNull": false,
+                    "unique": true,
+                    "field": "phone_number",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "path": "/Users/js-pc/Documents/JavaScript/Express-Serializer/migrations/_current.json",
+    "backupPath": "/Users/js-pc/Documents/JavaScript/Express-Serializer/migrations/_current_bak.json",
+    "exists": true,
+    "revision": 4
+}

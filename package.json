@@ -1,0 +1,30 @@
+{
+  "name": "express-serializer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app",
+    "make": "sequelize-mig migration:make -n miga",
+    "migrate": "npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0",
+    "sequelize-auto-migrations": "^1.0.3",
+    "sequelize-cli": "^6.6.1"
+  },
+  "devDependencies": {
+    "sequelize-auto": "^0.8.8"
+  }
+}
